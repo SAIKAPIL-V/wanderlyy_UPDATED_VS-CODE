@@ -1,0 +1,538 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A stunning mountain landscape at sunrise.",
+      "imageUrl": "https://images.unsplash.com/photo-1478088913771-e3a36f50bb63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzYxMjIwODgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain landscape"
+    },
+    {
+      "id": "tour-paris",
+      "description": "Eiffel Tower in Paris.",
+      "imageUrl": "https://images.unsplash.com/photo-1619794578892-cbdd3ff81c95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWlmZmVsJTIwdG93ZXJ8ZW58MHx8fHwxNzYxMjA0NjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eiffel tower"
+    },
+    {
+      "id": "tour-paris-2",
+      "description": "Louvre Museum exterior.",
+      "imageUrl": "https://images.unsplash.com/photo-1491156855053-9cdff72c7f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtdXNldW18ZW58MHx8fHwxNzYxMjkzOTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "museum"
+    },
+    {
+      "id": "tour-kyoto",
+      "description": "Fushimi Inari Shrine in Kyoto.",
+      "imageUrl": "https://images.unsplash.com/photo-1585028281328-54ec883cd7cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaHJpbmV8ZW58MHx8fHwxNzYxMjkzOTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shrine"
+    },
+    {
+      "id": "tour-kyoto-2",
+      "description": "Arashiyama Bamboo Grove.",
+      "imageUrl": "https://images.unsplash.com/photo-1500215238115-1322078d92a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYW1ib28lMjBmb3Jlc3R8ZW58MHx8fHwxNzYxMjkzOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bamboo forest"
+    },
+    {
+      "id": "hotel-mulia-bali",
+      "description": "Courtyard View at Mulia Resort in Bali.",
+      "imageUrl": "https://cdn.prod.website-files.com/6624ff6a5db57a668993dd4c/669a11ba30a6cbbfc8e4755f_MRB-Courtyard%20View.webp",
+      "imageHint": "resort courtyard"
+    },
+    {
+      "id": "hotel-mulia-bali-2",
+      "description": "Beachfront view of Mulia Resort.",
+      "imageUrl": "https://images.trvl-media.com/lodging/6000000/5550000/5548300/5548225/08b192ed.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+      "imageHint": "beach resort"
+    },
+    {
+      "id": "hotel-mulia-bali-3",
+      "description": "Luxurious suite interior at Mulia Resort.",
+      "imageUrl": "https://www.themulia.com/d/muliaresortbali/media/GALLERY/Mulia-Resort/Royal-Suite/Royal-Suite-Bedroom-1.jpg",
+      "imageHint": "luxury suite"
+    },
+    {
+      "id": "package-alps",
+      "description": "Skiing in the Swiss Alps.",
+      "imageUrl": "https://www.mansfieldmtbuller.com.au/wp-content/uploads/sites/46/atdw-AU0031057-5743dd479462fd295bb07f76.jpg",
+      "imageHint": "skiing alps"
+    },
+    {
+      "id": "package-alps-2",
+      "description": "A cozy chalet in the mountains.",
+      "imageUrl": "https://images.unsplash.com/photo-1704831862404-0affc8991086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMGNoYWxldHxlbnwwfHx8fDE3NjEyOTE1MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain chalet"
+    },
+    {
+      "id": "tour-rome",
+      "description": "The Colosseum in Rome.",
+      "imageUrl": "https://www.enjoyrome.com/ownimage/2017222151447.jpg",
+      "imageHint": "colosseum"
+    },
+    {
+      "id": "tour-rome-2",
+      "description": "The Roman Forum.",
+      "imageUrl": "https://cdn.britannica.com/45/196945-050-CCF8BD72/Temple-of-Saturn-Arch-Septimius-Severus-Forum.jpg",
+      "imageHint": "roman forum"
+    },
+    {
+      "id": "tour-canyon",
+      "description": "A helicopter tour over the Grand Canyon.",
+      "imageUrl": "https://images.unsplash.com/photo-1531694611353-d4758f86fa6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncmFuZCUyMGNhbnlvbnxlbnwwfHx8fDE3NjEyOTM5MjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grand canyon"
+    },
+    {
+      "id": "tour-canyon-2",
+      "description": "A view from within the Grand Canyon.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTct4kqJl6cqduGiWc9V8gn4km5z7xuJSBUqA&s",
+      "imageHint": "canyon view"
+    },
+    {
+      "id": "package-safari",
+      "description": "An African safari adventure.",
+      "imageUrl": "https://images.unsplash.com/photo-1674787657711-e8e84fc89c19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYWZhcmklMjB3aWxkbGlmZXxlbnwwfHx8fDE3NjEyOTM5MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "safari wildlife"
+    },
+    {
+      "id": "package-safari-2",
+      "description": "Annual migration in the Serengeti.",
+      "imageUrl": "https://image.kesari.in/upload/VT/Serengeti-annual-migration.jpg",
+      "imageHint": "serengeti migration"
+    },
+    {
+      "id": "user-avatar-1",
+      "description": "User avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyMjc5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-2",
+      "description": "User avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyMjc5NjN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "user-avatar-3",
+      "description": "User avatar.",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEyMjc5NjN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "confirmation",
+      "description": "Person looking at a map.",
+      "imageUrl": "https://images.unsplash.com/photo-1552166211-d3059c93dec8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjB0cmF2ZWx8ZW58MHx8fHwxNzYxMjkzOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map travel"
+    },
+    {
+      "id": "tour-tajmahal",
+      "description": "The Taj Mahal in Agra.",
+      "imageUrl": "https://images.unsplash.com/photo-1564507592333-c60657eea523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0YWolMjBtYWhhbHxlbnwwfHx8fDE3NjM0MzkzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "taj mahal"
+    },
+    {
+      "id": "tour-tajmahal-2",
+      "description": "A stunning day view of the Taj Mahal.",
+      "imageUrl": "https://www.tajmahal.gov.in/images/tajmahal-view/day/1.jpg",
+      "imageHint": "taj mahal day"
+    },
+    {
+      "id": "tour-tajmahal-3",
+      "description": "Agra Fort in India.",
+      "imageUrl": "https://images.unsplash.com/photo-1600195544116-75f639434193?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ3JhJTIwZm9ydHxlbnwwfHx8fDE3NjM0Mzk0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agra fort"
+    },
+    {
+      "id": "tour-jaipur",
+      "description": "Hawa Mahal in Jaipur, the Pink City.",
+      "imageUrl": "https://www.theindianwire.com/wp-content/uploads/2017/05/Pink-city.jpg",
+      "imageHint": "hawa mahal"
+    },
+    {
+      "id": "tour-jaipur-2",
+      "description": "Jal Mahal palace in Jaipur.",
+      "imageUrl": "https://static.toiimg.com/img/115224983/Master.jpg",
+      "imageHint": "jal mahal"
+    },
+    {
+      "id": "package-kerala",
+      "description": "Kerala backwaters houseboat.",
+      "imageUrl": "https://img.freepik.com/free-photo/houseboat-kerala-backwaters-india_163782-466.jpg?size=626&ext=jpg",
+      "imageHint": "kerala backwaters"
+    },
+    {
+      "id": "package-kerala-2",
+      "description": "Another view of a houseboat in Kerala.",
+      "imageUrl": "https://www.keralaholidays.com/uploads/tourpackages/main/wwww.jpg",
+      "imageHint": "kerala houseboat"
+    },
+    {
+      "id": "tour-goldentemple",
+      "description": "The Golden Temple in Amritsar.",
+      "imageUrl": "https://assets.cntraveller.in/photos/6368e174a788c013ce0f6c11/master/w_1600%2Cc_limit/golden-temple-3.jpg",
+      "imageHint": "golden temple"
+    },
+    {
+      "id": "tour-goldentemple-2",
+      "description": "A close-up of the Golden Temple's architecture.",
+      "imageUrl": "https://www.civitatis.com/f/india/amritsar/tour-templo-dorado-589x392.jpg",
+      "imageHint": "temple architecture"
+    },
+    {
+      "id": "tour-varanasi",
+      "description": "Evening Ganga Aarti ceremony in Varanasi.",
+      "imageUrl": "https://img.freepik.com/premium-photo/serene-ganga-aarti-ceremony-along-ghats-varanasi_1057859-761.jpg",
+      "imageHint": "ganga aarti"
+    },
+    {
+      "id": "tour-varanasi-2",
+      "description": "Boats on the Ganges river at the ghats of Varanasi.",
+      "imageUrl": "https://kashiyatra.in/wp-content/uploads/2023/10/assi-ghat-ganga-aarti.jpeg",
+      "imageHint": "varanasi ghats"
+    },
+    {
+      "id": "package-goa",
+      "description": "A beautiful beach in Goa, India.",
+      "imageUrl": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2021/07/Goa_Image1-1-1.jpg",
+      "imageHint": "goa beach"
+    },
+    {
+      "id": "package-goa-2",
+      "description": "An aerial view of a Goan beach.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKYeAtlsj5o4FXzlXgOON1v6c-x2WwMMFdYDPD6IUgu2SkuwAsFCtgPLH2BAN-zlsnPhA&usqp=CAU",
+      "imageHint": "goa aerial"
+    },
+    {
+      "id": "hotel-oberoi-agra",
+      "description": "Luxury hotel exterior of The Oberoi Amarvilas.",
+      "imageUrl": "https://www.greavesindia.co.uk/wp-content/uploads/2016/11/Greaves_The_Oberoi_Amarvilas.jpg",
+      "imageHint": "luxury hotel"
+    },
+    {
+      "id": "hotel-oberoi-agra-2",
+      "description": "A suite with a view of the Taj Mahal.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7omCVNpVzit-NgDCjVHPQJrl30u62JMChA&s",
+      "imageHint": "hotel suite"
+    },
+    {
+      "id": "hotel-ritz-kyoto",
+      "description": "Exterior of The Ritz-Carlton, Kyoto.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/1e/41/c1/hotel-exterior.jpg?w=900&h=500&s=1",
+      "imageHint": "hotel exterior"
+    },
+    {
+      "id": "hotel-ritz-kyoto-2",
+      "description": "A garden water feature at the hotel.",
+      "imageUrl": "https://www.americanexpress.com/en-us/travel/discover/photos/301157/64188/530/other_garden_waterfeature02.jpg?ch=310",
+      "imageHint": "hotel garden"
+    },
+    {
+      "id": "hotel-four-seasons-paris",
+      "description": "Luxurious suite at Four Seasons George V.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/294102199.jpg?k=c6c79806fa7ba4510c8c8a886cd0597cde2fdfe954fa4198dfb32a078470bb09&o=&hp=1",
+      "imageHint": "luxury suite"
+    },
+    {
+      "id": "hotel-four-seasons-paris-2",
+      "description": "The grand entrance of the hotel.",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/01/c6/c1/7f/front-entrance.jpg",
+      "imageHint": "hotel entrance"
+    },
+    {
+      "id": "hotel-russie-rome",
+      "description": "The exterior of Hotel de Russie in Rome.",
+      "imageUrl": "https://images.trvl-media.com/lodging/1000000/530000/523800/523751/08ac9e11.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+      "imageHint": "rome hotel"
+    },
+    {
+      "id": "hotel-russie-rome-2",
+      "description": "A stylishly appointed suite.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/35196181.jpg?k=735723d2a17ee29ec447b9d0bcaa1dc79f1acb97f11f79ab62fec19d4a34fbcf&o=&hp=1",
+      "imageHint": "hotel suite"
+    },
+    {
+      "id": "hotel-bellagio-vegas",
+      "description": "The iconic Fountains of Bellagio.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/5d/59/60/bellagio-hero-2016.jpg?w=900&h=500&s=1",
+      "imageHint": "fountain show"
+    },
+    {
+      "id": "hotel-bellagio-vegas-2",
+      "description": "A guest room overlooking the Las Vegas strip.",
+      "imageUrl": "https://lh3.googleusercontent.com/proxy/Dgj5jKtflBz5-QavZgHEf7XDAq4-VOpCHGJCj0AOkEZKbdCbb433OlAsFrail5myIb5p1ff3cb3_UEf__lnGspJgNt30zOVTiVjUzGm6uE0NbL8MArQnBxvtwVqrLDlGjCIRT8ZTqS1KCAwUMW9IEFblDCEHSA=s1360-w1360-h1020-rw",
+      "imageHint": "city view"
+    },
+    {
+      "id": "hotel-four-seasons-serengeti",
+      "description": "An elephant by the hotel's watering hole.",
+      "imageUrl": "https://www.shadowsofafrica.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/f/o/four-seasons-serengeti-night.jpg",
+      "imageHint": "wildlife lodge"
+    },
+    {
+      "id": "hotel-four-seasons-serengeti-2",
+      "description": "Infinity pool overlooking the Serengeti plains.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS327_96DHts9v7_8ubOdfYucB_eMbMdi3K5g&s",
+      "imageHint": "infinity pool"
+    },
+    {
+      "id": "hotel-plaza-nyc",
+      "description": "The Plaza Hotel in New York City.",
+      "imageUrl": "https://pix10.agoda.net/hotelImages/450/45092/45092_15121701030038563774.jpg?ca=6&ce=1&s=414x232",
+      "imageHint": "plaza hotel"
+    },
+    {
+      "id": "hotel-plaza-nyc-2",
+      "description": "The opulent lobby of The Plaza.",
+      "imageUrl": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6011-61:8by10?fmt=jpg&op_usm=1.75,0.3,2,0&resMode=sharp2&iccEmbed=true&icc=sRGB&dpr=on,1.5&wid=335&hei=418&qlt=80",
+      "imageHint": "luxury lobby"
+    },
+    {
+      "id": "hotel-savoy-london",
+      "description": "The Savoy Hotel entrance in London.",
+      "imageUrl": "https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2024/10/22124935/shutterstock_1100918342-min-1024x683.jpg",
+      "imageHint": "london hotel"
+    },
+    {
+      "id": "hotel-savoy-london-2",
+      "description": "The American Bar at The Savoy.",
+      "imageUrl": "https://images.squarespace-cdn.com/content/v1/64a439dde5405e2ca5d9a1b1/1707570734342-VL2I3R3R6X3TRAVCAX6U/LuxuryLens_The_Savoy_Edition.jpeg",
+      "imageHint": "classic bar"
+    },
+    {
+      "id": "hotel-park-hyatt-sydney",
+      "description": "Park Hyatt Sydney with Opera House view.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/e4/3c/aa/exterior.jpg?w=900&h=500&s=1",
+      "imageHint": "opera house"
+    },
+    {
+      "id": "hotel-park-hyatt-sydney-2",
+      "description": "Rooftop pool and terrace.",
+      "imageUrl": "https://assets.venuecrew.com/wp-content/uploads/2024/10/12085500/Park-Hyatt-Sydney-Event-Photography-Guest-House-Terrace-640x640.jpg",
+      "imageHint": "rooftop pool"
+    },
+    {
+      "id": "hotel-burj-al-arab-dubai",
+      "description": "The iconic Burj Al Arab in Dubai.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/675859513.jpg?k=cbb19bcc2fd1ab8b431d538e96cd0372c4738a46c69d9204d60649dcac98d843&o=",
+      "imageHint": "dubai hotel"
+    },
+    {
+      "id": "hotel-burj-al-arab-dubai-2",
+      "description": "The lavish interior atrium.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBA1B_xokf9-k_foF9FPq24aaMIKGSxBKAaw&s",
+      "imageHint": "atrium interior"
+    },
+    {
+      "id": "hotel-gritti-venice",
+      "description": "The Gritti Palace on the Grand Canal, Venice.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/bc/d4/the-gritti-palace-a-luxury.jpg?w=900&h=500&s=1",
+      "imageHint": "venice canal"
+    },
+    {
+      "id": "hotel-gritti-venice-2",
+      "description": "A suite with classic Venetian decor.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/06/bc/e4/the-gritti-palace-a-luxury.jpg?w=700&h=-1&s=1",
+      "imageHint": "venetian decor"
+    },
+    {
+      "id": "hotel-katikies-santorini",
+      "description": "Katikies Hotel in Oia, Santorini.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1V3F0xKWOQG4hRkB-rTXXZE3RGaLoC-8og&s",
+      "imageHint": "santorini hotel"
+    },
+    {
+      "id": "hotel-katikies-santorini-2",
+      "description": "An infinity pool overlooking the caldera.",
+      "imageUrl": "https://www.katikies.com/media/8d8dfbdf54fdb00/01_13_katikies-hotel-mykonos-pool.jpg?center=0.50244112018122877,0.59333333333333338&mode=crop&width=490&height=653&rnd=132594158231630000",
+      "imageHint": "caldera view"
+    },
+    {
+      "id": "hotel-copacabana-rio",
+      "description": "The Copacabana Palace in Rio de Janeiro.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/662715879.jpg?k=d8680285d503f02dc0facfc7fe3683ad6cec036ba0878ccac007bf2854f50ba2&o=",
+      "imageHint": "rio hotel"
+    },
+    {
+      "id": "hotel-copacabana-rio-2",
+      "description": "The iconic swimming pool.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/662715879.jpg?k=d8680285d503f02dc0facfc7fe3683ad6cec036ba0878ccac007bf2854f50ba2&o=",
+      "imageHint": "hotel pool"
+    },
+    {
+      "id": "hotel-marriott-mena-cairo",
+      "description": "Marriott Mena House with pyramid views.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/ff/01/29/marriott-mena-house-cairo.jpg?w=900&h=500&s=1",
+      "imageHint": "pyramid view"
+    },
+    {
+      "id": "hotel-marriott-mena-cairo-2",
+      "description": "A guest room with a balcony facing the pyramids.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSAtKCwezBuLVSjzLl7uP_ywI649N5e39rg&s",
+      "imageHint": "pyramid room"
+    },
+    {
+      "id": "hotel-marina-bay-sands-sg",
+      "description": "Marina Bay Sands hotel in Singapore.",
+      "imageUrl": "https://cbey.yale.edu/sites/default/files/styles/page_image/public/media/image/casestudy/Marina-Bay-Sands-at-dusk-1014px.gif.webp?itok=wwJ_OAi0",
+      "imageHint": "singapore skyline"
+    },
+    {
+      "id": "hotel-marina-bay-sands-sg-2",
+      "description": "The famous rooftop infinity pool.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/0a/92/56/sands-skypark.jpg?w=900&h=500&s=1",
+      "imageHint": "rooftop pool"
+    },
+    {
+      "id": "hotel-upper-house-hk",
+      "description": "The Upper House hotel in Hong Kong.",
+      "imageUrl": "https://media.cntraveller.com/photos/611bf5e33e186825295c3306/16:9/w_2992,h_1683,c_limit/upper-house-nov18-press.jpg",
+      "imageHint": "hong kong"
+    },
+    {
+      "id": "hotel-upper-house-hk-2",
+      "description": "A room with panoramic city views.",
+      "imageUrl": "https://media.cntraveller.com/photos/611bf5e33e186825295c3306/16:9/w_2992,h_1683,c_limit/upper-house-nov18-press.jpg",
+      "imageHint": "city view"
+    },
+    {
+      "id": "hotel-taj-mumbai",
+      "description": "The Taj Mahal Palace hotel in Mumbai.",
+      "imageUrl": "https://gos3.ibcdn.com/ce4d12dcc80011e99a7a0242ac110003.jpg",
+      "imageHint": "mumbai hotel"
+    },
+    {
+      "id": "hotel-taj-mumbai-2",
+      "description": "Grand Luxury Suite at The Taj Mahal Palace.",
+      "imageUrl": "https://akm-img-a-in.tosshub.com/lingo/images/story/media_bank/202312/657bdd60d1fdd-taj-mumbai-150015589-16x9.png",
+      "imageHint": "luxury suite"
+    },
+    {
+      "id": "hotel-taj-udaipur",
+      "description": "Taj Lake Palace in Udaipur.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/713031969.jpg?k=35bce585ebe5cff87dca1db2ec83ad536e258322179ecb3311551734bde042f3&o=",
+      "imageHint": "lake palace"
+    },
+    {
+      "id": "hotel-taj-udaipur-2",
+      "description": "Courtyard of the Taj Lake Palace.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVDJCmOQtQyUR7jjCKhCED1b1ZvO8tjczzg&s",
+      "imageHint": "palace courtyard"
+    },
+    {
+      "id": "hotel-taj-jaipur",
+      "description": "Rambagh Palace in Jaipur.",
+      "imageUrl": "https://weddingphotographybysf.com/wp-content/uploads/2024/12/Ram-bagh-wedding.jpg",
+      "imageHint": "jaipur palace"
+    },
+    {
+      "id": "hotel-taj-jaipur-2",
+      "description": "The poolside of Rambagh Palace.",
+      "imageUrl": "https://www.wildernesstravel.com/wp-content/uploads/2024/02/10-taj-rambagh-palace-exterior-sunset.jpg",
+      "imageHint": "palace pool"
+    },
+    {
+      "id": "hotel-itc-chola",
+      "description": "The grand exterior of ITC Grand Chola.",
+      "imageUrl": "https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandchola-chennai/images/overview/headmast-desktop/exterior-dusk.png",
+      "imageHint": "grand hotel"
+    },
+    {
+      "id": "hotel-itc-chola-2",
+      "description": "One of the pools at ITC Grand Chola.",
+      "imageUrl": "https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandchola-chennai/images/overview/headmast-desktop/pool-long-dusk.png",
+      "imageHint": "hotel pool"
+    },
+    {
+      "id": "hotel-lalitha-mahal",
+      "description": "The majestic Lalitha Mahal Palace Hotel in Mysore.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkscIR3t9Mn71tujdB8bP1Si2BQYppCaxLg&s",
+      "imageHint": "palace hotel"
+    },
+    {
+      "id": "hotel-lalitha-mahal-2",
+      "description": "An architectural marvel, Lalitha Mahal Palace.",
+      "imageUrl": "https://cdn.junglelodges.com/uploads/2022/11/1-11_935x518_acf_cropped.jpg",
+      "imageHint": "royal palace"
+    },
+    {
+      "id": "hotel-novotel-goa",
+      "description": "The vibrant poolside at Novotel Goa Candolim.",
+      "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/765787283.jpg?k=73e09903190fa6c9de1f1f70e92276feba9c92b200d13012d806a0d7d6dcad47&o=",
+      "imageHint": "resort pool"
+    },
+    {
+      "id": "hotel-novotel-goa-2",
+      "description": "The exterior of Novotel Goa Candolim.",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/97/e8/5a/novotel-facade.jpg?w=900&h=500&s=1",
+      "imageHint": "hotel exterior"
+    },
+    {
+      "id": "package-world-tour-1",
+      "description": "The ancient wonder of Machu Picchu in Peru.",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/bd/d9/14.jpg",
+      "imageHint": "machu picchu"
+    },
+    {
+      "id": "package-world-tour-2",
+      "description": "The Great Pyramids of Giza in Egypt.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6QBMkDg40GW0-S6to61Z5xDf2WWOgwhVtow&s",
+      "imageHint": "giza pyramids"
+    },
+    {
+      "id": "package-world-tour-3",
+      "description": "A montage of world landmarks.",
+      "imageUrl": "https://img.freepik.com/free-photo/view-famous-3d-model-representation-world-Wanderlust_23-2151093325.jpg",
+      "imageHint": "world landmarks"
+    },
+    {
+      "id": "package-france-tour-1",
+      "description": "The beautiful coastline of the French Riviera.",
+      "imageUrl": "https://imgcld.yatra.com/ytimages/image/upload/v1444635594/France_5.jpg",
+      "imageHint": "french riviera"
+    },
+    {
+      "id": "package-france-tour-2",
+      "description": "Vineyards in the Bordeaux region of France.",
+      "imageUrl": "https://res.klook.com/image/upload/q_85/c_fill,w_750/v1718112298/klyzxawxgytpixrvsgem.jpg",
+      "imageHint": "bordeaux vineyards"
+    },
+    {
+      "id": "package-france-tour-3",
+      "description": "The Sacré-Cœur Basilica in Montmartre, Paris.",
+      "imageUrl": "https://images.unsplash.com/photo-1569941885144-48f1b8a90184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb250bWFydHJlJTIwcGFyaXN8ZW58MHx8fHwxNzYzNjUzODUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "montmartre paris"
+    },
+    {
+      "id": "package-india-tour-1",
+      "description": "India Gate in New Delhi.",
+      "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYSUyMGdhdGV8ZW58MHx8fHwxNzYzNjUzODg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "india gate"
+    },
+    {
+      "id": "package-india-tour-2",
+      "description": "Humayun's Tomb in Delhi.",
+      "imageUrl": "https://images.unsplash.com/photo-1579781354098-341279a103b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxodW1heXVuJTIwdG9tYnxlbnwwfHx8fDE3NjM2NTM5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "humayun tomb"
+    },
+    {
+      "id": "package-india-tour-3",
+      "description": "A colorful market in Jaipur.",
+      "imageUrl": "https://images.unsplash.com/photo-1618334464209-a1b551061b47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqYWlwdXIlMjBtYXJrZXR8ZW58MHx8fHwxNzYzNjUzOTI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jaipur market"
+    },
+    {
+      "id": "package-nz-tour-1",
+      "description": "The majestic Milford Sound in New Zealand.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFerISbbnUOHMtoMgWFLtiW2SCXOak8TtCQ&s",
+      "imageHint": "milford sound"
+    },
+    {
+      "id": "package-nz-tour-2",
+      "description": "A helicopter on Franz Josef Glacier.",
+      "imageUrl": "https://cdn.kimkim.com/files/a/content_articles/featured_photos/7ab22cabe809d9ead60225d26b7bebf2a079ff95/big-a15593cb61a685fe4c945a33a6d4bbca.jpg",
+      "imageHint": "franz josef"
+    },
+    {
+      "id": "package-nz-tour-3",
+      "description": "Lake Wakatipu in Queenstown.",
+      "imageUrl": "https://images.unsplash.com/photo-1589947806596-7248b69ad93e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYWtlJTIwd2FrYXRpcHV8ZW58MHx8fHwxNzYzNjU0MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "queenstown lake"
+    }
+  ]
+}

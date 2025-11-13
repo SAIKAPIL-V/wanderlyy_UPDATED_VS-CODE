@@ -1,0 +1,390 @@
+{
+  "entities": {
+    "User": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "User",
+      "type": "object",
+      "description": "Represents a user of the Wanderly travel booking system.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the user entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The user's full name."
+        },
+        "email": {
+          "type": "string",
+          "description": "The user's email address.",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string",
+          "description": "The user's phone number."
+        },
+        "role": {
+          "type": "string",
+          "description": "The user's role (e.g., user, admin, host)."
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "The timestamp when the user account was created.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "email",
+        "role",
+        "createdAt"
+      ]
+    },
+    "Listing": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Listing",
+      "type": "object",
+      "description": "Represents a tour, hotel, or package available for booking.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the listing entity."
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the listing."
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of listing (e.g., tour, hotel, package)."
+        },
+        "location": {
+          "type": "string",
+          "description": "The location of the listing."
+        },
+        "description": {
+          "type": "string",
+          "description": "A description of the listing."
+        },
+        "images": {
+          "type": "array",
+          "description": "An array of image URLs for the listing.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "basePrice": {
+          "type": "number",
+          "description": "The base price of the listing."
+        },
+        "capacity": {
+          "type": "number",
+          "description": "The capacity of the listing (e.g., number of guests)."
+        },
+        "hostId": {
+          "type": "string",
+          "description": "Reference to User. (Relationship: User 1:N Listing)"
+        },
+        "amenities": {
+          "type": "array",
+          "description": "An array of amenities offered by the listing.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rating": {
+          "type": "number",
+          "description": "The average rating of the listing."
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "type",
+        "location",
+        "description",
+        "basePrice",
+        "capacity",
+        "hostId"
+      ]
+    },
+    "Availability": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Availability",
+      "type": "object",
+      "description": "Represents the availability of a listing on a specific date.",
+      "properties": {
+        "listingId": {
+          "type": "string",
+          "description": "Reference to Listing. (Relationship: Listing 1:N Availability)"
+        },
+        "date": {
+          "type": "string",
+          "description": "The date for which availability is being tracked (ISO format).",
+          "format": "date-time"
+        },
+        "slotsAvailable": {
+          "type": "number",
+          "description": "The number of slots available on the specified date."
+        },
+        "priceOverride": {
+          "type": "number",
+          "description": "An optional price override for the specified date."
+        },
+        "reservedCount": {
+          "type": "number",
+          "description": "The number of slots currently reserved on the specified date."
+        }
+      },
+      "required": [
+        "listingId",
+        "date",
+        "slotsAvailable",
+        "reservedCount"
+      ]
+    },
+    "Booking": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Booking",
+      "type": "object",
+      "description": "Represents a booking made by a user for a specific listing.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the booking entity."
+        },
+        "listingId": {
+          "type": "string",
+          "description": "Reference to Listing. (Relationship: Listing 1:N Booking)"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Reference to User. (Relationship: User 1:N Booking)"
+        },
+        "startDate": {
+          "type": "string",
+          "description": "The start date of the booking.",
+          "format": "date-time"
+        },
+        "endDate": {
+          "type": "string",
+          "description": "The end date of the booking.",
+          "format": "date-time"
+        },
+        "guests": {
+          "type": "number",
+          "description": "The number of guests included in the booking."
+        },
+        "priceTotal": {
+          "type": "number",
+          "description": "The total price of the booking."
+        },
+        "status": {
+          "type": "string",
+          "description": "The status of the booking (e.g., pending, confirmed, cancelled)."
+        },
+        "paymentIntentId": {
+          "type": "string",
+          "description": "The ID of the Stripe PaymentIntent associated with the booking."
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "The timestamp when the booking was created.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "listingId",
+        "userId",
+        "startDate",
+        "endDate",
+        "guests",
+        "priceTotal",
+        "status",
+        "createdAt"
+      ]
+    },
+    "Review": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Review",
+      "type": "object",
+      "description": "Represents a review of a listing by a user.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the review entity."
+        },
+        "listingId": {
+          "type": "string",
+          "description": "Reference to Listing. (Relationship: Listing 1:N Review)"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Reference to User. (Relationship: User 1:N Review)"
+        },
+        "rating": {
+          "type": "number",
+          "description": "The rating given by the user (e.g., 1-5 stars)."
+        },
+        "comment": {
+          "type": "string",
+          "description": "The comment provided by the user."
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "The timestamp when the review was created.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "listingId",
+        "userId",
+        "rating",
+        "comment",
+        "createdAt"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "google.com"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userId}",
+        "definition": {
+          "entityName": "User",
+          "schema": {
+            "$ref": "#/backend/entities/User"
+          },
+          "description": "Stores user profiles. Uses path-based ownership for private user data.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The unique identifier for the user."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/listings/{listingId}",
+        "definition": {
+          "entityName": "Listing",
+          "schema": {
+            "$ref": "#/backend/entities/Listing"
+          },
+          "description": "Stores listing information (tours, hotels, packages).",
+          "params": [
+            {
+              "name": "listingId",
+              "description": "The unique identifier for the listing."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/listings/{listingId}/availability/{dateDoc}",
+        "definition": {
+          "entityName": "Availability",
+          "schema": {
+            "$ref": "#/backend/entities/Availability"
+          },
+          "description": "Stores availability information for a listing, organized by date. Subcollection to avoid large top-level collections.",
+          "params": [
+            {
+              "name": "listingId",
+              "description": "The unique identifier for the listing."
+            },
+            {
+              "name": "dateDoc",
+              "description": "The date for which availability is being tracked (ISO format)."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/bookings/{bookingId}",
+        "definition": {
+          "entityName": "Booking",
+          "schema": {
+            "$ref": "#/backend/entities/Booking"
+          },
+          "description": "Stores booking information.  This could be moved to a subcollection of `/users/{userId}` for enhanced security but is placed here to avoid complex queries across collections",
+          "params": [
+            {
+              "name": "bookingId",
+              "description": "The unique identifier for the booking."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/bookings/{bookingId}",
+        "definition": {
+          "entityName": "Booking",
+          "schema": {
+            "$ref": "#/backend/entities/Booking"
+          },
+          "description": "Stores booking information related to a specific user. Uses path-based ownership.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The unique identifier for the user."
+            },
+            {
+              "name": "bookingId",
+              "description": "The unique identifier for the booking."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/listings/{listingId}/reviews/{reviewId}",
+        "definition": {
+          "entityName": "Review",
+          "schema": {
+            "$ref": "#/backend/entities/Review"
+          },
+          "description": "Stores reviews for a specific listing.",
+          "params": [
+            {
+              "name": "listingId",
+              "description": "The unique identifier for the listing."
+            },
+            {
+              "name": "reviewId",
+              "description": "The unique identifier for the review."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/reviews/{reviewId}",
+        "definition": {
+          "entityName": "Review",
+          "schema": {
+            "$ref": "#/backend/entities/Review"
+          },
+          "description": "Stores reviews made by a specific user.  Uses path-based ownership.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The unique identifier for the user."
+            },
+            {
+              "name": "reviewId",
+              "description": "The unique identifier for the review."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore structure is designed to support the Wanderly travel booking system, focusing on authorization independence, clarity, and scalability.  Authorization Independence is achieved by using path-based ownership for user-related data and membership maps for collaborative data, avoiding `get()` calls in security rules. Structural Segregation is implemented by separating data with different access needs into distinct collections (e.g., users, listings). Access Modeling follows a consistent pattern: Path-Based ownership for user-owned data (e.g., `/users/{userId}/bookings/{bookingId}`), and membership maps for collaborative access when needed (though not explicitly modeled here due to the nature of the entities). The design prioritizes clarity by enforcing semantic naming conventions and explicit state modeling. QAPs (Rules are not Filters) are supported through structural segregation. For instance, listings are public, enabling secure list operations. User-specific data (bookings, reviews) is nested under the user's document, enabling list operations scoped to the user."
+  }
+}
