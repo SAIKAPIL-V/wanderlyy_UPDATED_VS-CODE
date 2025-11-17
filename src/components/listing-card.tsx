@@ -39,7 +39,7 @@ export function ListingCard({ listing }: ListingCardProps) {
                       src={image.imageUrl}
                       alt={listing.title}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       data-ai-hint={image.imageHint}
                     />
