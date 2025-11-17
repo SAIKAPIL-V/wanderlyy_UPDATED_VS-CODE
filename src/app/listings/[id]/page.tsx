@@ -95,7 +95,7 @@ export default async function ListingDetailPage({ params }: { params: any }) {
                 <CarouselContent>
                     {listing.images.map((image, index) => (
                     <CarouselItem key={index}>
-                        <div className="aspect-video relative">
+                        <div className="aspect-[4/3] relative">
                         <Image
                             src={image.imageUrl}
                             alt={`${listing.title} - Image ${index + 1}`}
