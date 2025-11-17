@@ -103,6 +103,22 @@ export function BookingForm({ listingId }: { listingId: string }) {
       };
       addBooking(newBooking as Booking);
 
+      // Save to MongoDB
+      fetch('/api/bookings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: user?.uid || 'user123',
+          listingId: values.listingId,
+          email: values.email,
+          checkInDate: values.startDate.toISOString(),
+          checkOutDate: values.endDate.toISOString(),
+          numberOfGuests: values.guests,
+          totalPrice: 1000,
+          action: 'create',
+        }),
+      }).catch(err => console.error('Error saving booking to MongoDB:', err));
+
       if (values.email) {
         sendEmail({
           to: values.email,

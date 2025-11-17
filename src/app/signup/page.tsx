@@ -55,6 +55,25 @@ export default function SignupPage() {
           console.error('Failed to create user document in Firestore:', err);
         }
 
+        // Also save to MongoDB
+        try {
+          const response = await fetch('/api/users', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              uid: userCredential.user.uid,
+              email: userCredential.user.email,
+              name: fullName,
+              action: 'create',
+            }),
+          });
+          if (!response.ok) {
+            console.error('Failed to create user in MongoDB');
+          }
+        } catch (err) {
+          console.error('Error saving user to MongoDB:', err);
+        }
+
         // Send welcome email
         await sendEmail({
           to: email,
